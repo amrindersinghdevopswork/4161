@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-    xmlns:o="urn:schemas-microsoft-com:office:office">
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Why Choose Us – Tranquil Decor</title>
-    <!--[if !mso]><!-->
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--[if !mso]>-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--<![endif]-->
-    <!--[if mso]>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no" />
+    <!--[if !mso]>-->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!--<![endif]-->
     <style type="text/css">
-        body, table, td, p, a, h1, h2, h3 { font-family: Arial, sans-serif !important; }
-    </style>
-    <![endif]-->
-    <style type="text/css">
-        /* ===== RESET ===== */
+        /* === FONT FACE === */
+        @font-face {
+            font-family: 'Carentro';
+            src: url('https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/Carentro%20DEMO.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* === RESET === */
         body,
         table,
         td,
-        p,
         a {
             -webkit-text-size-adjust: 100%;
             -ms-text-size-adjust: 100%;
@@ -35,392 +42,313 @@
         img {
             -ms-interpolation-mode: bicubic;
             border: 0;
+            height: auto;
+            line-height: 100%;
             outline: none;
             text-decoration: none;
         }
 
-        /* ===== BASE STYLES ===== */
-        .karla {
-            font-family: 'Karla', 'Helvetica Neue', Arial, sans-serif;
-        }
-
-        .feature-num {
+        body {
             margin: 0;
-            font-size: 36px;
-            font-weight: 800;
-            color: #8B6914;
-            font-family: 'Karla', Arial, sans-serif;
-            line-height: 36px;
+            padding: 0;
+            width: 100% !important;
+            min-width: 100%;
+            background-color: #f2ede6;
         }
 
-        .feature-title {
-            margin: 0 0 4px 0;
-            font-size: 16px;
-            font-weight: 700;
-            color: #2c2c2c;
-            font-family: 'Karla', Arial, sans-serif;
-        }
-
-        .feature-desc {
-            margin: 0;
-            font-size: 13px;
-            line-height: 20px;
-            color: #777777;
-            font-family: 'Karla', Arial, sans-serif;
-        }
-
-        .separator {
-            height: 1px;
-            background-color: #e8e4d8;
-        }
-
-        .social-icon {
-            display: inline-block;
-            width: 38px;
-            height: 38px;
-            background-color: #3d3d3d;
-            border-radius: 50%;
+        a {
+            color: inherit;
             text-decoration: none;
         }
 
-        .footer-info {
-            font-family: 'Karla', Arial, sans-serif;
-            font-size: 10px;
-            color: #aaaaaa;
-            text-decoration: none;
+        /* === TYPOGRAPHY === */
+        .font-heading {
+            font-family: 'Carentro', Georgia, 'Times New Roman', serif;
         }
 
-        .legal-text {
-            margin: 0;
-            font-family: 'Karla', Arial, sans-serif;
-            font-size: 10px;
-            font-weight: 400;
-            color: #666666;
-            line-height: 16px;
-            text-align: center;
+        .font-body {
+            font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
         }
 
-        .hero-img-right {
-            width: 250px;
-            height: auto;
-            border-radius: 20px;
-            margin: 8px;
-            position: absolute;
-            right: -150px;
-            top: 150px;
-        }
 
-        .hero-img-left {
-            width: 250px;
-            height: auto;
-            border-radius: 20px;
-            margin: 8px;
-            position: absolute;
-            left: -120px;
-            top: 10px;
-        }
-
-        /* ===== MOBILE RESPONSIVE ===== */
-        @media only screen and (max-width: 600px) {
-            .main-container {
+        /* === RESPONSIVE === */
+        @media only screen and (max-width: 768px) {
+            .wrapper {
                 width: 100% !important;
-                margin: 0 !important;
-                border-radius: 0 !important;
+                max-width: 100% !important;
             }
 
-            .header-pad {
-                padding: 8px 12px !important;
+            .mobile-padding {
+                padding-left: 24px !important;
+                padding-right: 24px !important;
             }
 
-            .header-pad img {
-                max-width: 60% !important;
+            .mobile-full {
+                width: 100% !important;
+                display: block !important;
             }
 
-            .section-pad {
-                padding-left: 16px !important;
-                padding-right: 16px !important;
+            .mobile-center {
+                text-align: center !important;
             }
 
-            .heading-text {
+            .mobile-hide {
+                display: none !important;
+            }
+
+            /* Header */
+            .header-td {
+                padding: 8px 20px !important;
+            }
+
+            .header-logo {
+                width: 36px !important;
+                height: auto !important;
+
+            }
+
+            .header-brand {
+                font-size: 15px !important;
+                letter-spacing: 2px !important;
+            }
+
+            .header-tagline {
+                font-size: 9px !important;
+                letter-spacing: 3px !important;
+            }
+
+            /* Banner */
+            .banner-img {
+                width: 100% !important;
+                height: auto !important;
+                object-fit: cover !important;
+                border-radius: 8px !important;
+            }
+
+            /* Intro */
+            .intro-pad {
+                padding: 12px 24px !important;
+            }
+
+            .intro-heading {
+                font-size: 13px !important;
+            }
+
+            .intro-title {
                 font-size: 20px !important;
-                padding: 0 16px !important;
+                line-height: 28px !important;
             }
 
-            .body-text {
-                font-size: 14px !important;
+            .intro-body {
+                font-size: 16px !important;
                 line-height: 24px !important;
-                padding-left: 16px !important;
-                padding-right: 16px !important;
+            }
+
+            /* Feature rows */
+            .feature-pad {
+                padding: 20px 24px !important;
+            }
+
+            .feature-num {
+                font-size: 28px !important;
             }
 
             .feature-title {
                 font-size: 14px !important;
             }
 
-            .feature-desc {
-                font-size: 12px !important;
-                line-height: 18px !important;
-            }
-
-            .quote-pad {
-                padding: 16px !important;
-            }
-
-            .signature-pad {
-                padding: 16px 16px 28px 16px !important;
+            .feature-body {
                 font-size: 13px !important;
+                line-height: 20px !important;
             }
 
-            .mob-pad {
-                padding: 20px 16px !important;
+            /* Single-column stacking on mobile */
+            .feat-cell {
+                display: block !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+
             }
 
-            .intro-img {
-                display: none !important;
-                width: 0 !important;
-                max-height: 0 !important;
-                overflow: hidden !important;
+            .feat-num-cell {
+                padding-right: 0 !important;
+                padding-bottom: 4px !important;
+                border-bottom: 2px solid #c9a96e;
+                width: 20px !important;
+            }
+
+
+            .feat-text-cell {
+                padding-bottom: 12px !important;
+            }
+
+            .feat-img-cell {
+                padding-left: 0 !important;
+                text-align: center !important;
+                padding-bottom: 8px !important;
+            }
+
+            .feat-img-cell img {
+                width: 100px !important;
+                height: 100px !important;
+                margin: 0 auto !important;
+            }
+
+            /* Quote */
+            .quote-pad {
+                padding: 28px 24px !important;
+            }
+
+            .quote-text {
+                font-size: 14px !important;
+                line-height: 24px !important;
+            }
+
+            /* Sign-off */
+            .signoff-pad {
+                padding: 28px 24px !important;
+            }
+
+            .cta-btn {
+                display: block !important;
+                width: 80% !important;
+                text-align: center !important;
+                padding: 14px 24px !important;
+            }
+
+            /* Footer */
+            .footer-pad {
+                padding: 28px 24px !important;
+            }
+
+            .footer-social-td {
+                padding: 0 6px !important;
+            }
+
+            .footer-info {
+                font-size: 11px !important;
+            }
+
+            .footer-icon-cell {
+                display: block !important;
+                width: 100% !important;
+                text-align: center !important;
+                padding: 4px 0 !important;
+            }
+
+            img {
+                max-width: 100% !important;
             }
         }
     </style>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
 </head>
 
-<body style="margin:0; padding:0; background-color:#ffffff; font-family:'Karla','Helvetica Neue',Arial,sans-serif;">
+<body style="margin:0; padding:0; background-color:#f2ede6;">
 
-    <!-- OUTER WRAPPER TABLE -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f4f1ec" role="presentation">
+    <!-- Preheader (hidden preview text) -->
+    <div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">
+        5 reasons why Tranquil Decor is the right interior design partner for your dream space.
+        &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+    </div>
+
+    <!-- ======== OUTER WRAPPER ======== -->
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f8f8f8;">
         <tr>
-            <td align="center" style="padding:0;">
+            <td align="center" style="padding:10px 0px;">
 
-                <!-- MAIN CONTAINER -->
-                <table width="600" border="0" cellspacing="0" cellpadding="0" bgcolor="#F1F1F1" class="main-container"
-                    style="margin:40px 0; text-align:center; max-width:600px; width:100%; overflow:hidden; box-shadow:0 2px 16px rgba(0,0,0,0.06);"
-                    role="presentation">
+                <!-- ======== EMAIL CONTAINER ======== -->
+                <table role="presentation" class="wrapper" cellpadding="0" cellspacing="0"
+                    style="width:100%; max-width:786px; background-color:#ffffff;">
 
-                    <!-- ===== HEADER ===== -->
+                    <!-- ── TOP ACCENT LINE ── -->
                     <tr>
-                        <td align="center" class="header-pad" style="padding:10px;">
-                            <img src="../images/Curves@2x.png" alt="Tranquil Decor Logo" width="75"
-                                style="width:75px; max-width:100%; height:auto; display:block; margin:0 auto;">
+                        <td style="height:3px; background-color:#c9a96e; font-size:0; line-height:0;">&nbsp;</td>
+                    </tr>
+                    <!-- ── HEADER ── -->
+                    <tr>
+                        <td align="center" class="header-td" style="background-color:#041C0F; padding:8px 48px;">
+                            <a href="https://tranquildc.com" style="text-decoration:none; display:inline-block;">
+                                <table role="presentation" cellpadding="0" cellspacing="0" align="center">
+                                    <tr>
+                                        <td valign="middle" style="padding-right:12px;">
+                                            <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/logo_3D%402x.png"
+                                                alt="Tranquil Decor" width="48" class="header-logo"
+                                                style="display:block; width:48px; height:auto;" />
+                                        </td>
+                                        <td valign="middle">
+                                            <span class="font-heading header-brand"
+                                                style="font-family:'Carentro',Georgia,serif; font-size:18px; color:#c9a96e; letter-spacing:3px; text-transform:uppercase; display:block;">
+                                                Tranquil Decor
+                                            </span>
+                                            <span class="font-body header-tagline" align="center"
+                                                style="font-family:'Karla',Arial,sans-serif; font-size:10px; color:rgba(201,169,110,0.6); letter-spacing:4px; text-transform:uppercase; display:block; margin-top:3px;">
+                                                Style With Harmony
+                                            </span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </a>
                         </td>
                     </tr>
 
-                    <!-- ===== BANNER ===== -->
+                    <!-- ── BANNER IMAGE ── -->
                     <tr>
-                        <td align="center" style="padding:0 10px 10px 10px;">
-                            <img src="../images/commercial.jpg" alt="Interior Design Banner" width="580" height="200"
-                                style="width:580px; height:200px; max-width:100%; display:block; border-radius:10px;">
+                        <td style="padding:8px; font-size:0; line-height:0;">
+                            <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/commercial.jpg"
+                                alt="Tranquil Decor Interiors" width="786" class="banner-img"
+                                style="display:block; width:100%; height:220px; max-width:100%; object-fit:cover; border-radius: 10px;" />
                         </td>
                     </tr>
 
-                    <!-- ===== TAGLINE & INTRO ===== -->
+                    <!-- ── SUBJECT LABEL ── -->
                     <tr>
-                        <td style="padding:32px 24px 6px 24px; text-align:center; position: relative;"
-                            class="section-pad">
-                            <!--[if !mso]><!-->
-                            <img src="../images/Consultation.jpg" alt="" width="200" class="intro-img hero-img-left">
-                            <!--<![endif]-->
-
-                            <p class="karla"
-                                style="margin:0 0 10px 0; font-size:22px; font-weight:500; color:#2c2c2c; line-height:30px; display:inline-block; vertical-align:middle;">
-                                If you can <span style="font-style:italic; font-weight:700;">Dream it,</span><br>
-                                We can <span style="font-style:italic; font-weight:700;">Build it.</span>
-                            </p>
-
-
-                            <p class="karla"
-                                style="margin:12px 16px 0 16px; font-size:13px; line-height:22px; color:#000000; width: 300px; margin: 10px auto; ">
-                                Choosing the right interior design partner is essential when creating a space that
-                                reflects your
-                                lifestyle, comfort, and vision. We are committed to delivering a refined, transparent,
-                                and
-                                professionally managed interior experience with the highest standards of quality and
-                                service.
-                            </p>
-                            <!--[if !mso]><!-->
-                            <img src="../images/hero_image.jpg" alt="" width="200" class="intro-img hero-img-right">
-                            <!--<![endif]-->
-                        </td>
-                    </tr>
-
-
-                    <!-- ===== "WHY CLIENTS PREFER US" HEADING ===== -->
-                    <tr>
-                        <td style="padding:28px 40px 20px 40px; text-align:center;" class="section-pad">
-                            <p class="karla"
-                                style="margin:0; font-size:11px; font-weight:600; color:#8B6914; letter-spacing:2px; text-transform:uppercase;">
-                                Why Clients Prefer Us
-                            </p>
-                            <p class="karla"
-                                style="margin:8px 0 0 0; font-size:28px; font-weight:700; color:#2c2c2c; line-height:34px;">
-                                <span style="font-size:42px; color:#8B6914; font-weight:800;">5</span><br>
-                                Key Reasons to<br>Choose <span style="color:#8B6914;">Tranquil Decor</span>
+                        <td align="center" style="padding:32px 48px 0 48px; background-color:#ffffff;"
+                            class="mobile-padding">
+                            <p class="font-body"
+                                style="margin:0; font-family:'Karla',Arial,sans-serif; font-size:16px; font-weight:600; color:#c9a96e; letter-spacing:4px; text-transform:uppercase;">
+                                Why Choose Us
                             </p>
                         </td>
                     </tr>
 
-                    <!-- ===== FEATURE 1 ===== -->
+                    <!-- ── INTRO HEADING ── -->
                     <tr>
-                        <td style="padding:0 40px;" class="section-pad">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                        <td align="center" class="mobile-padding"
+                            style="padding: 0px 48px 12px; background-color:#ffffff;">
+                            <h1 class="intro-title"
+                                style="margin:0 0 20px; font-family:'Karla',Arial,sans-serif; font-size:24px; font-weight:700; color:#041C0F; line-height:38px; letter-spacing:1px;">
+                                The right partner for your dream space
+                            </h1>
+                            <p class="intro-body"
+                                style="margin:0; font-family:'Karla',Arial,sans-serif; font-size:20px; font-weight:300; color:#000000; line-height:26px; letter-spacing:0.3px;">
+                                Hi <strong>{{Full_Name}}</strong>,
+                            </p>
+                            <p class="font-body intro-body" align="center"
+                                style="margin:12px 0 0; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:400; color:#000000; line-height:26px; letter-spacing:0.3px;">
+                                <!-- Choosing the right interior design partner is essential when creating a space that
+                                reflects your lifestyle, comfort, and vision. We are committed to delivering a refined,
+                                transparent, and professionally managed interior experience with the highest standards
+                                of quality and service. -->
+
+                                Designing or renovating your home is an important decision, and choosing the right
+                                interior partner makes all the difference.
+                            </p>
+
+                            <table role="presentation" cellpadding="0" cellspacing="0" align="center"
+                                style="margin-top: 24px;">
                                 <tr>
-                                    <td width="44" valign="top" style="padding-right:12px;">
-                                        <p class="feature-num">1.</p>
-                                    </td>
-                                    <td valign="top" style="padding-top:4px;">
-                                        <p class="feature-title">Complete Interior &amp; Renovation Solutions</p>
-                                        <p class="feature-desc">End-to-end design &amp; renovation — from concept to
-                                            handover.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding:50px 40px;" class="section-pad">
-                            <div class="separator"></div>
-                        </td>
-                    </tr>
-
-                    <!-- ===== FEATURE 2 ===== -->
-                    <tr>
-                        <td style="padding:0 40px;" class="section-pad">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                    <td width="44" valign="top" style="padding-right:12px;">
-                                        <p class="feature-num">2.</p>
-                                    </td>
-                                    <td valign="top" style="padding-top:4px;">
-                                        <p class="feature-title">Assured &amp; Timely Execution</p>
-                                        <p class="feature-desc">Structured project management for on-time delivery
-                                            within 45 days.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding:14px 40px;" class="section-pad">
-                            <div class="separator"></div>
-                        </td>
-                    </tr>
-
-                    <!-- ===== FEATURE 3 ===== -->
-                    <tr>
-                        <td style="padding:0 40px;" class="section-pad">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                    <td width="44" valign="top" style="padding-right:12px;">
-                                        <p class="feature-num">3.</p>
-                                    </td>
-                                    <td valign="top" style="padding-top:4px;">
-                                        <p class="feature-title">Real-Time Remote Monitoring</p>
-                                        <p class="feature-desc">Monitor your project progress from anywhere, anytime.
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding:14px 40px;" class="section-pad">
-                            <div class="separator"></div>
-                        </td>
-                    </tr>
-
-                    <!-- ===== FEATURE 4 ===== -->
-                    <tr>
-                        <td style="padding:0 40px;" class="section-pad">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                    <td width="44" valign="top" style="padding-right:12px;">
-                                        <p class="feature-num">4.</p>
-                                    </td>
-                                    <td valign="top" style="padding-top:4px;">
-                                        <p class="feature-title">Dedicated Client CRM Portal</p>
-                                        <p class="feature-desc">Track updates, request changes &amp; communicate — all
-                                            in one portal.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding:14px 40px;" class="section-pad">
-                            <div class="separator"></div>
-                        </td>
-                    </tr>
-
-                    <!-- ===== FEATURE 5 ===== -->
-                    <tr>
-                        <td style="padding:0 40px;" class="section-pad">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                    <td width="44" valign="top" style="padding-right:12px;">
-                                        <p class="feature-num">5.</p>
-                                    </td>
-                                    <td valign="top" style="padding-top:4px;">
-                                        <p class="feature-title">10 Years Repair &amp; Maintenance</p>
-                                        <p class="feature-desc">Up to 10 years of post-project repair &amp; maintenance
-                                            support.</p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="padding:10px 0;"></td>
-                    </tr>
-
-                    <!-- ===== CLOSING QUOTE ===== -->
-                    <tr>
-                        <td style="padding:0 40px;" class="section-pad">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                    <td style="background-color:#faf6ee; border-left:3px solid #8B6914; border-radius:0 6px 6px 0; padding:16px 20px;"
-                                        class="quote-pad">
-                                        <p class="karla"
-                                            style="margin:0; font-size:14px; line-height:22px; color:#555555; font-style:italic;">
-                                            &#8220;We believe interior design is not just about creating beautiful
-                                            spaces — it is about delivering <strong
-                                                style="color:#8B6914;">trust</strong>,
-                                            <strong style="color:#8B6914;">quality</strong>, and a
-                                            <strong style="color:#8B6914;">hassle-free experience</strong>.&#8221;
-                                        </p>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
-                    <!-- ===== HONOR LINE ===== -->
-                    <tr>
-                        <td class="body-text karla"
-                            style="font-size:15px; line-height:26px; color:#555555; font-weight:400; padding:22px 40px 0 40px; text-align:left;">
-                            We would be honored to design and build your dream space.
-                        </td>
-                    </tr>
-
-                    <!-- ===== SIGNATURE ===== -->
-                    <tr>
-                        <td class="signature-pad karla"
-                            style="font-size:14px; color:#999999; letter-spacing:0.5px; padding:18px 40px 28px 40px; text-align:left;">
-                            Warm Regards,<br>
-                            <strong style="color:#2c2c2c;">Tranquil Decor</strong><br>
-                            <span style="font-size:12px; letter-spacing:0.3px; color:#aaaaaa;">Premium Interior Design
-                                &amp; Renovation Services</span>
-                        </td>
-                    </tr>
-
-                    <!-- ===== CTA BUTTON ===== -->
-                    <tr>
-                        <td align="center" style="padding:4px 10px 32px 10px;">
-                            <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                <tr>
-                                    <td align="center" bgcolor="#8B6914" style="border-radius:6px;">
-                                        <a href="https://tranquildc.com/" target="_blank" class="karla"
-                                            style="font-size:13px; color:#ffffff; text-decoration:none; padding:13px 28px; border-radius:6px; display:inline-block; font-weight:600; letter-spacing:0.8px; text-transform:uppercase;">
-                                            Book Free Consultation
+                                    <td style="border-radius:4px; background-color:#041C0F;">
+                                        <a href="https://tranquildc.com/contact/" class="cta-btn"
+                                            style="display:inline-block; font-family:'Karla',Arial,sans-serif; font-size:14px; font-weight:600; color:#fff5dc; text-decoration:none; padding:14px 36px; border-radius:10px; letter-spacing:2px; text-transform:uppercase;">
+                                            Get In Touch
                                         </a>
                                     </td>
                                 </tr>
@@ -428,65 +356,481 @@
                         </td>
                     </tr>
 
-                    <!-- ===== FOOTER ===== -->
+
+                    <!-- Divider -->
                     <tr>
-                        <td style="background-color:#2c2c2c; padding:28px 40px;" class="mob-pad">
+                        <td style="padding:20px 48px; background-color:#ffffff;" class="mobile-padding">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="border-top:2px solid #c9a96e; font-size:0; line-height:0; height:2px;">
+                                        &nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── COMMON PROBLEMS SECTION ── -->
+                    <tr>
+                        <td align="center" class="mobile-padding"
+                            style="padding: 12px 48px 32px; background-color:#ffffff;">
+                            <h1 class="intro-title"
+                                style="margin:0 0 20px; font-family:'Karla',Arial,sans-serif; font-size:24px; font-weight:700; color:#041C0F; line-height:30px; letter-spacing:1px;">
+                                Common Interior Problems
+                            </h1>
+                            <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/WhyChooseUs/ChatGPT%20Image%20Mar%2012,%202026,%2011_36_28%20PM.png"
+                                alt="Why Choose Us" width="786" class="banner-img"
+                                style="display:block; width:100%; height:auto; max-width:100%; object-fit:cover; border-radius: 10px;" />
+                            <p class="font-body intro-body"
+                                style="margin:24px 0 0; font-style: italic;  font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:400; line-height:26px;">
+                                That is why we provide a complete interior design &amp; renovation service with a
+                                professional and transparent system,<span style="font-weight: bold;"> " so you stay in
+                                    control of your project at every step. "</span>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding:0 48px; background-color:#ffffff;" class="mobile-padding">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="border-top:2px solid #c9a96e; font-size:0; line-height:0; height:2px;">
+                                        &nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+
+                    <!-- ── SECTION LABEL: FEATURES ── -->
+                    <tr>
+                        <td align="center" style="padding:32px 48px 8px; background-color:#ffffff;"
+                            class="mobile-padding">
+                            <p class="font-body"
+                                style="margin:0; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:600; color:#c9a96e; letter-spacing:4px; text-transform:uppercase;">
+                                5 Key Reasons
+                            </p>
+                            <p class=""
+                                style="margin:8px 0 0; font-family:'Karla',Arial,sans-serif; font-size:24px; font-weight:700; color:#041C0F; letter-spacing:0.5px;">
+                                Why Clients Prefer Us
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- ── FEATURE 1 ── -->
+                    <tr>
+                        <td class="feature-pad mobile-padding" style="padding:24px 48px; background-color:#ffffff;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="feat-cell feat-num-cell border-line" width="34" valign="middle"
+                                        style="padding-right:24px; ">
+                                        <span class="font-heading feature-num"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:34px; font-weight:400; color:#041C0F; line-height:1; display:block;">
+                                            01
+                                        </span>
+                                    </td>
+
+                                    <td class="feat-cell feat-text-cell" valign="middle">
+                                        <p class="font-body feature-title"
+                                            style="margin:0 0 12px; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:700; color:#041C0F; letter-spacing:0.3px;">
+                                            Complete Interior &amp; Renovation Solutions
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" align="left"
+                                            class="font-body feature-body"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; color:#041C0F; line-height:24px; margin:0 auto;">
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; End-to-end
+                                                    interior design
+                                                    &amp; renovation</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull;
+                                                    Concept design to final
+                                                    handover</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">&bull; Expert team with precision and
+                                                    care</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="feat-cell feat-img-cell" width="180" valign="middle"
+                                        style="padding-left:20px;">
+                                        <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/feature_01_interior_1773310644186.png"
+                                            width="180" height="180" alt="Interior &amp; Renovation"
+                                            style="display:block; width:180px; height:180px; border-radius:10px; object-fit:cover;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- divider -->
+                    <tr>
+                        <td style="padding:0 48px;" class="mobile-padding">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="border-top:1px solid #041C0F; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── FEATURE 2 ── -->
+                    <tr>
+                        <td class="feature-pad mobile-padding" style="padding:24px 48px; background-color:#ffffff;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="feat-cell feat-num-cell border-line" width="34" valign="middle"
+                                        style="padding-right:24px; ">
+                                        <span class="font-heading feature-num"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:34px; font-weight:400; color:#041C0F; line-height:1; display:block;">
+                                            02
+                                        </span>
+
+                                    </td>
+                                    <td class="feat-cell feat-text-cell" valign="middle">
+                                        <p class="font-body feature-title"
+                                            style="margin:0 0 12px; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:700; color:#041C0F; letter-spacing:0.3px;">
+                                            Assured &amp; Timely Execution – Minimum 45 Days
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" align="left"
+                                            class="font-body feature-body"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; color:#041C0F; line-height:24px; margin:0 auto;">
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; Structured workflow
+                                                    &amp;
+                                                    project management</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; On-time delivery
+                                                    within 45
+                                                    days</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">&bull; Premium quality standards maintained</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="feat-cell feat-img-cell" width="180" valign="middle"
+                                        style="padding-left:20px;">
+                                        <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/feature_02_timeline_1773310659379.png"
+                                            width="180" height="180" alt="Timely Execution"
+                                            style="display:block; width:180px; height:180px; border-radius:10px; object-fit:cover;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+
+                    <!-- divider -->
+                    <tr>
+                        <td style="padding:0 48px;" class="mobile-padding">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="border-top:1px solid #041C0F; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── FEATURE 3 ── -->
+                    <tr>
+                        <td class="feature-pad mobile-padding" style="padding:24px 48px; background-color:#ffffff;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="feat-cell feat-num-cell border-line" width="34" valign="middle"
+                                        style="padding-right:24px; ">
+                                        <span class="font-heading feature-num"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:34px; font-weight:400; color:#041C0F; line-height:1; display:block;">
+                                            03
+                                        </span>
+                                    </td>
+                                    <td class="feat-cell feat-text-cell" valign="middle">
+                                        <p class="font-body feature-title"
+                                            style="margin:0 0 12px; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:700; color:#041C0F; letter-spacing:0.3px;">
+                                            Real-Time Remote Project Monitoring
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" align="left"
+                                            class="font-body feature-body"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; color:#041C0F; line-height:24px; margin:0 auto;">
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; 100% transparent
+                                                    execution
+                                                    process</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; Real-time progress
+                                                    tracking
+                                                    from anywhere</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">&bull; Complete confidence &amp; peace of mind</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="feat-cell feat-img-cell" width="180" valign="middle"
+                                        style="padding-left:20px;">
+                                        <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/feature_03_monitoring_1773310680069.png"
+                                            width="180" height="180" alt="Remote Monitoring"
+                                            style="display:block; width:180px; height:180px; border-radius:10px; object-fit:cover;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- divider -->
+                    <tr>
+                        <td style="padding:0 48px;" class="mobile-padding">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="border-top:1px solid #041C0F; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── FEATURE 4 ── -->
+                    <tr>
+                        <td class="feature-pad mobile-padding" style="padding:24px 48px; background-color:#ffffff;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="feat-cell feat-num-cell border-line" width="34" valign="middle"
+                                        style="padding-right:24px; ">
+                                        <span class="font-heading feature-num"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:34px; font-weight:400; color:#041C0F; line-height:1; display:block;">
+                                            04
+                                        </span>
+                                    </td>
+                                    <td class="feat-cell feat-text-cell" valign="middle">
+                                        <p class="font-body feature-title"
+                                            style="margin:0 0 12px; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:700; color:#041C0F; letter-spacing:0.3px;">
+                                            Dedicated Client CRM Portal
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" align="left"
+                                            class="font-body feature-body"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; color:#041C0F; line-height:24px; margin:0 auto;">
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; Secure access to
+                                                    dedicated
+                                                    CRM portal</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; Track live updates
+                                                    &amp;
+                                                    request modifications</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">&bull; Direct communication with our team</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="feat-cell feat-img-cell" width="180" valign="middle"
+                                        style="padding-left:20px;">
+                                        <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/feature_04_crm_1773310698252.png"
+                                            width="180" height="180" alt="CRM Portal"
+                                            style="display:block; width:180px; height:180px; border-radius:10px; object-fit:cover;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- divider -->
+                    <tr>
+                        <td style="padding:0 48px;" class="mobile-padding">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="border-top:1px solid #041C0F; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── FEATURE 5 ── -->
+                    <tr>
+                        <td class="feature-pad mobile-padding" style="padding:24px 48px; background-color:#ffffff;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="feat-cell feat-num-cell border-line" width="34" valign="middle"
+                                        style="padding-right:24px; ">
+                                        <span class="font-heading feature-num"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:34px; font-weight:400; color:#041C0F; line-height:1; display:block;">
+                                            05
+                                        </span>
+                                    </td>
+                                    <td class="feat-cell feat-text-cell" valign="middle">
+                                        <p class="font-body feature-title"
+                                            style="margin:0 0 12px; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:700; color:#041C0F; letter-spacing:0.3px;">
+                                            10 Years Repair &amp; Maintenance Support
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" align="left"
+                                            class="font-body feature-body"
+                                            style="font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; color:#041C0F; line-height:24px; margin:0 auto;">
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; Long-term
+                                                    relationship
+                                                    post-completion</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top" style="padding-bottom:2px;">&bull; Up to 10 years of
+                                                    maintenance support</td>
+                                            </tr>
+                                            <tr>
+                                                <td valign="top">&bull; Unmatched durability &amp; peace of mind</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="feat-cell feat-img-cell" width="180" valign="middle"
+                                        style="padding-left:20px;">
+                                        <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/feature_05_maintenance_1773310723785.png"
+                                            width="180" height="180" alt="Maintenance Support"
+                                            style="display:block; width:180px; height:180px; border-radius:10px; object-fit:cover;" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── QUOTE BLOCK ── -->
+                    <tr>
+                        <td style="padding:0; background-color:#041C0F;">
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td class="quote-pad mobile-padding" style="padding:40px 48px; text-align:center;">
+                                        <p class="font-body"
+                                            style="margin:0 0 6px; font-family:'Karla',Arial,sans-serif; font-size:10px; font-weight:600; color:#c9a96e; letter-spacing:4px; text-transform:uppercase;">
+                                            Our Promise
+                                        </p>
+                                        <p class="font-heading quote-text"
+                                            style="margin:12px 0 0; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; color:#fff5dc; line-height:30px; letter-spacing:0.5px;">
+                                            &#8220;We believe interior design is not just about creating beautiful
+                                            spaces — it is about delivering <span style="color:#c9a96e;">trust</span>,
+                                            <span style="color:#c9a96e;">quality</span>, and a <span
+                                                style="color:#c9a96e;">hassle-free experience</span>.&#8221;
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- ── SIGN-OFF ── -->
+                    <tr>
+                        <td class="signoff-pad mobile-padding" style="padding:40px 48px; background-color:#ffffff;">
+                            <p class="font-body" align="center"
+                                style="margin:0 0 10px; font-family:'Karla',Arial,sans-serif; font-size:22px; font-weight:700; color:#041C0F; line-height:26px;">
+                                Ready to Start Your Interior Project?
+                            </p>
+                            <p class="font-body"
+                                style="margin:0 0 10px; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:400; line-height:24px;">
+                                Get a Free Consultation + Design Idea + Cost Estimate from our expert team.<br /><br />
+                                Click below to get started:
+                            </p>
+
+                            <!-- CTA Links -->
+                            <table role="presentation" cellpadding="0" cellspacing="0" style="padding-top: 10px;">
+                                <tr>
+                                    <td style="padding-bottom:12px;">
+                                        <a href="https://tranquildc.com/contact/" class="font-body"
+                                            style="display:inline-block; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:600; color:#041C0F; text-decoration:underline;">
+                                            👉 Book Your Free Consultation
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom:12px;">
+                                        <a href="https://tranquildc.com/quote/" class="font-body"
+                                            style="display:inline-block; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:600; color:#041C0F; text-decoration:underline;">
+                                            👉 Get Your Interior Quote
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="tel:+917679355991" class="font-body"
+                                            style="display:inline-block; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:600; color:#041C0F; text-decoration:underline;">
+                                            👉 Talk to Our Designer
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p class="font-body"
+                                style="margin:30px 0 6px; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:300; color:#9a9a9a; line-height:22px;">
+                                Warm regards,
+                            </p>
+                            <p class="font-body"
+                                style="margin:0 0 4px; font-family:'Karla',Arial,sans-serif; font-size:18px; font-weight:600; color:#041C0F;">
+                                Tranquil Decor
+                            </p>
+                        </td>
+                    </tr>
+
+                    <!-- ── FOOTER ── -->
+                    <tr>
+                        <td style="background-color:#041C0F; padding: 28px 40px;" class="mob-pad footer-td">
                             <!-- Social Icons -->
                             <table role="presentation" cellpadding="0" cellspacing="0" align="center"
                                 style="margin:0 auto 20px;">
                                 <tr>
-                                    <td style="padding:0 8px;">
-                                        <a href="https://www.facebook.com/tranquildecor1" class="social-icon">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" width="38"
-                                                height="38" style="width:38px;height:38px;">
+                                    <td style="padding:0 10px;">
+                                        <a href="https://www.facebook.com/tranquildecor1"
+                                            style="display:inline-block; width:44px; height:44px; background-color:#1a2e1f; border:1px solid #3a4f3f; border-radius:50%; text-decoration:none;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" style="width:44px;height:44px;">
                                                 <tr>
-                                                    <td align="center" valign="middle" height="38" style="height:38px;">
-                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-f.png"
-                                                            width="16" height="16" alt="FB"
-                                                            style="display:block;width:16px;height:16px;">
+                                                    <td align="center" valign="middle" height="44" style="height:44px;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/FFF5DC/facebook-f.png"
+                                                            width="20" height="20" alt="FB"
+                                                            style="display:block;width:20px;height:20px;" />
                                                     </td>
                                                 </tr>
                                             </table>
                                         </a>
                                     </td>
-                                    <td style="padding:0 8px;">
-                                        <a href="https://www.instagram.com/tranquildc/" class="social-icon">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" width="38"
-                                                height="38" style="width:38px;height:38px;">
+                                    <td style="padding:0 10px;">
+                                        <a href="https://www.instagram.com/tranquildc/"
+                                            style="display:inline-block; width:44px; height:44px; background-color:#1a2e1f; border:1px solid #3a4f3f; border-radius:50%; text-decoration:none;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" style="width:44px;height:44px;">
                                                 <tr>
-                                                    <td align="center" valign="middle" height="38" style="height:38px;">
-                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png"
-                                                            width="16" height="16" alt="IG"
-                                                            style="display:block;width:16px;height:16px;">
+                                                    <td align="center" valign="middle" height="44" style="height:44px;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/FFF5DC/instagram-new.png"
+                                                            width="20" height="20" alt="IG"
+                                                            style="display:block;width:20px;height:20px;" />
                                                     </td>
                                                 </tr>
                                             </table>
                                         </a>
                                     </td>
-                                    <td style="padding:0 8px;">
+                                    <td style="padding:0 10px;">
                                         <a href="https://www.linkedin.com/company/107141777/admin/dashboard/"
-                                            class="social-icon">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" width="38"
-                                                height="38" style="width:38px;height:38px;">
+                                            style="display:inline-block; width:44px; height:44px; background-color:#1a2e1f; border:1px solid #3a4f3f; border-radius:50%; text-decoration:none;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" style="width:44px;height:44px;">
                                                 <tr>
-                                                    <td align="center" valign="middle" height="38" style="height:38px;">
-                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin-2.png"
-                                                            width="16" height="16" alt="LI"
-                                                            style="display:block;width:16px;height:16px;">
+                                                    <td align="center" valign="middle" height="44" style="height:44px;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/FFF5DC/linkedin-2.png"
+                                                            width="20" height="20" alt="LI"
+                                                            style="display:block;width:20px;height:20px;" />
                                                     </td>
                                                 </tr>
                                             </table>
                                         </a>
                                     </td>
-                                    <td style="padding:0 8px;">
-                                        <a href="mailto:info@tranquildc.com" class="social-icon">
-                                            <table role="presentation" cellpadding="0" cellspacing="0" width="38"
-                                                height="38" style="width:38px;height:38px;">
+                                    <td style="padding:0 10px;">
+                                        <a href="mailto:info@tranquildc.com"
+                                            style="display:inline-block; width:44px; height:44px; background-color:#1a2e1f; border:1px solid #3a4f3f; border-radius:50%; text-decoration:none;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" style="width:44px;height:44px;">
                                                 <tr>
-                                                    <td align="center" valign="middle" height="38" style="height:38px;">
-                                                        <img src="https://img.icons8.com/ios-filled/50/ffffff/filled-message.png"
-                                                            width="16" height="16" alt="Email"
-                                                            style="display:block;width:16px;height:16px;">
+                                                    <td align="center" valign="middle" height="44" style="height:44px;">
+                                                        <img src="https://img.icons8.com/ios-filled/50/FFF5DC/filled-message.png"
+                                                            width="20" height="20" alt="Email"
+                                                            style="display:block;width:20px;height:20px;" />
                                                     </td>
                                                 </tr>
                                             </table>
@@ -495,77 +839,33 @@
                                 </tr>
                             </table>
 
-                            <!-- Footer contact info -->
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0" role="presentation"
-                                style="margin-bottom:16px;">
-                                <tr>
-                                    <td align="center" style="padding:0 0 12px 0;">
-                                        <table border="0" cellspacing="0" cellpadding="0" role="presentation">
-                                            <tr>
-                                                <td style="padding:0 12px;" valign="middle">
-                                                    <table border="0" cellspacing="0" cellpadding="0"
-                                                        role="presentation">
-                                                        <tr>
-                                                            <td valign="middle" style="padding-right:5px;">
-                                                                <img src="https://img.icons8.com/ios-filled/50/8B6914/marker.png"
-                                                                    width="12" height="12" alt=""
-                                                                    style="display:block;width:12px;height:12px;">
-                                                            </td>
-                                                            <td valign="middle">
-                                                                <span class="footer-info">Ranchi, 834001</span>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td style="padding:0 12px;" valign="middle">
-                                                    <table border="0" cellspacing="0" cellpadding="0"
-                                                        role="presentation">
-                                                        <tr>
-                                                            <td valign="middle" style="padding-right:5px;">
-                                                                <img src="https://img.icons8.com/ios-filled/50/8B6914/globe--v1.png"
-                                                                    width="12" height="12" alt=""
-                                                                    style="display:block;width:12px;height:12px;">
-                                                            </td>
-                                                            <td valign="middle">
-                                                                <a href="https://tranquildc.com"
-                                                                    class="footer-info">tranquildc.com</a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                                <td style="padding:0 12px;" valign="middle">
-                                                    <table border="0" cellspacing="0" cellpadding="0"
-                                                        role="presentation">
-                                                        <tr>
-                                                            <td valign="middle" style="padding-right:5px;">
-                                                                <img src="https://img.icons8.com/ios-filled/50/8B6914/filled-message.png"
-                                                                    width="12" height="12" alt=""
-                                                                    style="display:block;width:12px;height:12px;">
-                                                            </td>
-                                                            <td valign="middle">
-                                                                <a href="mailto:info@tranquildc.com"
-                                                                    class="footer-info">info@tranquildc.com</a>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <!-- Legal -->
-                            <p class="legal-text">
-                                &copy; 2026 Tranquil Decor. All rights reserved.<br>
-                                You received this because you're a valued client of Tranquil Decor.<br>
-                                <a href="#" style="color:#8B6914; text-decoration:underline;">Unsubscribe</a>
+                            <!-- Address & Legal -->
+                            <p class="font-body"
+                                style="margin:0; font-family:'Karla',Arial,sans-serif; font-size:11px; font-weight:400; color:#8a8472; line-height:18px; text-align:center;">
+                                H. No-46, Dhumsa Toli, Pragati Path, Oxford Road, Chutia, Ranchi —
+                                834001<br />
+                                <a href="tel:+913369029564" style="color:#8a8472; text-decoration:none;">+91
+                                    336-902-9564</a>
+                                &nbsp;|&nbsp;
+                                <a href="mailto:info@tranquildc.com"
+                                    style="color:#8a8472; text-decoration:none;">info@tranquildc.com</a>
+                            </p>
+                            <p class="font-body"
+                                style="margin:12px 0 0 0; font-family:'Karla',Arial,sans-serif; font-size:10px; font-weight:400; color:#6b6a5e; line-height:16px; text-align:center;">
+                                © 2026 Tranquil Decor. All rights reserved.<br />
+                                You received this because you're a valued client of Tranquil Decor.<br />
+                                <a href="#" style="color:#6b6a5e; text-decoration:underline;">Unsubscribe</a>
                             </p>
                         </td>
                     </tr>
 
+                    <!-- ── BOTTOM ACCENT LINE ── -->
+                    <tr>
+                        <td style="height:3px; background-color:#c9a96e; font-size:0; line-height:0;">&nbsp;</td>
+                    </tr>
+
                 </table>
-                <!-- End Main Container -->
+                <!-- end email container -->
 
             </td>
         </tr>
