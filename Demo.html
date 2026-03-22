@@ -1,157 +1,746 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="light">
-    <meta name="supported-color-schemes" content="light">
-
+    <title>Eid Mubarak – Tranquil Decor</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <style>
-        @media only screen and (max-width:600px) {
-            .container {
+        /* Base & Resets */
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f2ede6;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+        .st-outer-wrap {
+            padding: 0px 0 48px;
+        }
+
+        .st-shell {
+            max-width: 600px;
+            background: #ffffff;
+            border-top: 3px solid #2c2318;
+        }
+
+        .st-link-none {
+            text-decoration: none;
+        }
+
+        .st-flex-middle {
+            vertical-align: middle;
+        }
+
+        .st-block {
+            display: block;
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 620px) {
+            .email-wrap {
                 width: 100% !important;
             }
 
-            .stack-column {
+            .hero-h1 {
+                font-size: 38px !important;
+            }
+
+            .pad-main {
+                padding: 40px 24px !important;
+            }
+
+            .svc-td {
                 display: block !important;
                 width: 100% !important;
             }
 
-            .mobile-center {
-                text-align: center !important;
+            .svc-gap {
+                display: none !important;
             }
+        }
 
-            .padding-mobile {
-                padding: 20px !important;
-            }
+        /* 1. Header */
+        .st-header {
+            background: #041C0F;
+            padding: 16px 40px;
+        }
+
+        .st-logo-td {
+            padding-right: 14px;
+        }
+
+        .st-logo {
+            width: 48px;
+            height: auto;
+            display: block;
+        }
+
+        .st-brand-border {
+            border-left: 1px solid rgba(201, 169, 110, 0.30);
+            padding-left: 14px;
+        }
+
+        .st-brand-title {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 22px;
+            font-weight: 500;
+            color: #c9a96e;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            display: block;
+            line-height: 1.2;
+        }
+
+        .st-brand-tag {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 9px;
+            color: rgba(201, 169, 110, 0.50);
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            display: block;
+            margin-top: 5px;
+        }
+
+        /* 2. Hero Image */
+        .st-hero-td {
+            padding: 0;
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .st-hero-img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .st-gold-rule1 {
+            font-size: 0;
+            line-height: 0;
+            background: linear-gradient(90deg, #2c2318, #c9a96e, #2c2318);
+        }
+
+        /* 3. Eid Greeting */
+        .st-greet-td {
+            padding: 52px 64px 44px;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .st-greet-over {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #c9a96e;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 0 0 18px;
+            line-height: 1;
+        }
+
+        .st-greet-h1 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 50px;
+            font-weight: 500;
+            font-style: italic;
+            color: #1e1610;
+            letter-spacing: 1px;
+            line-height: 1.15;
+            margin: 0 0 24px;
+        }
+
+        .st-gold-rule-td {
+            font-size: 0;
+            line-height: 0;
+        }
+
+        .st-greet-body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 15px;
+            font-weight: 400;
+            color: #111111;
+            line-height: 1.85;
+            letter-spacing: 0.2px;
+            max-width: 440px;
+            margin: 0 auto;
+        }
+
+        .st-fw-600 {
+            font-weight: 600;
+        }
+
+        /* CTAs */
+        .st-cta-small-tbl {
+            margin-top: 28px;
+        }
+
+        .st-cta-small-td {
+            border-radius: 30px;
+        }
+
+        .st-cta-small-a {
+            display: inline-block;
+            border-bottom: 4px solid #c9a96e;
+            background: #041C0F;
+            color: #c9a96e;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 16px 28px;
+            border-radius: 50px;
+        }
+
+        .st-cta-large-a {
+            display: inline-block;
+            border-bottom: 4px solid #c9a96e;
+            background: #041C0F;
+            color: #c9a96e;
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 16px 28px;
+            border-radius: 8px;
+        }
+
+        .st-gold-rule2 {
+            margin: 0 auto 24px;
+        }
+
+        /* 4. Services Grid */
+        .st-svc-wrap {
+            padding: 0 20px 48px;
+            background: #ffffff;
+        }
+
+        .st-svc-header {
+            margin-bottom: 24px;
+        }
+
+        .st-svc-g1 {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #e0d9d0);
+        }
+
+        .st-svc-cap {
+            padding: 0 16px;
+            white-space: nowrap;
+        }
+
+        .st-svc-title {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #c9a96e;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .st-svc-g2 {
+            height: 1px;
+            background: linear-gradient(90deg, #e0d9d0, transparent);
+        }
+
+        .st-svc-tbl {
+            margin-bottom: 6px;
+        }
+
+        .st-svc-card {
+            background: #f9f6f1;
+            padding: 26px 24px;
+            border-left: 3px solid #c9a96e;
+            border-bottom: 5px solid #c9a96e;
+            border-radius: 10px;
+        }
+
+        .st-svc-h3 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c2318;
+            margin: 0 0 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .st-svc-p {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #111111;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* 5. CTA Block */
+        .st-cta-bg {
+            padding: 0px;
+            background: url('https://raw.githubusercontent.com/amrindersinghdevopswork/4161/main/images/moonlit.png') center center / cover no-repeat;
+        }
+
+        .st-cta-scrim {
+            background: rgba(17, 17, 1, 0.45);
+        }
+
+        .st-cta-pad {
+            padding: 64px 48px 56px;
+            text-align: center;
+        }
+
+        .st-cta-over {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #c9a96e;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            margin: 0 0 16px;
+            line-height: 1;
+        }
+
+        .st-cta-h2 {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 36px;
+            font-weight: 300;
+            color: #ffffff;
+            line-height: 1.2;
+            letter-spacing: 0.5px;
+            margin: 0 0 24px;
+        }
+
+        .st-italic-gold {
+            color: #c9a96e;
+            font-style: italic;
+        }
+
+        .st-cta-body {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.8;
+            letter-spacing: 0.2px;
+            margin: 0 auto 24px;
+            max-width: 400px;
+        }
+
+        .st-cta-highlight {
+            font-weight: 500;
+            color: #202020;
+            background-color: #f3f1ee;
+            padding: 6px 10px;
+            border-radius: 8px;
+        }
+
+        .st-img-wrap {
+            margin: 32px auto 32px;
+        }
+
+        .st-img-ac {
+            display: block;
+            width: 100%;
+            max-width: 280px;
+            height: auto;
+            border-radius: 4px;
+        }
+
+        .st-microcopy {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.568);
+            margin: 28px 0 0;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+        }
+
+        /* 6. Trust Bar */
+        .st-trust-wrap {
+            background: #f9f6f1;
+            padding: 32px 40px;
+            border-top: 1px solid #e8e0d5;
+            border-bottom: 1px solid #e8e0d5;
+        }
+
+        .st-trust-val {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+            font-size: 32px;
+            font-weight: 400;
+            color: #2c2318;
+            margin: 0 0 4px;
+            line-height: 1;
+        }
+
+        .st-trust-lbl {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 400;
+            color: #111111;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 0;
+            line-height: 1;
+        }
+
+        .st-trust-sep {
+            border-left: 1px solid #e0d9d0;
+            border-right: 1px solid #e0d9d0;
+        }
+
+        /* 7. Footer */
+        .st-footer {
+            background: #041c0f;
+            background-size: cover;
+            background-position: bottom;
+            background-blend-mode: overlay;
+            padding: 28px 40px;
+        }
+
+        .st-social-wrap {
+            margin: 0 auto 20px;
+        }
+
+        .st-social-pad {
+            padding: 0 8px;
+        }
+
+        .st-social-a {
+            display: inline-block;
+            width: 44px;
+            height: 44px;
+            background-color: #1a2e1f;
+            border: 1px solid #3a4f3f;
+            border-radius: 50%;
+            text-decoration: none;
+        }
+
+        .st-social-inner {
+            width: 44px;
+            height: 44px;
+        }
+
+        .st-social-img-td {
+            height: 44px;
+        }
+
+        .st-social-icon {
+            display: block;
+            width: 24px;
+            height: 24px;
+        }
+
+        .st-legal-1 {
+            margin: 0;
+            font-family: 'Karla', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #8a8472;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        .st-legal-a1 {
+            color: #8a8472;
+            text-decoration: none;
+        }
+
+        .st-legal-2 {
+            margin: 16px 0 0 0;
+            font-family: 'Karla', Arial, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            color: #6b6a5e;
+            line-height: 20px;
+            text-align: center;
+        }
+
+        .st-legal-a2 {
+            color: #6b6a5e;
+            text-decoration: underline;
         }
     </style>
 </head>
 
-<body style="margin:0; padding:0; background-color:#f2f2f2; font-family:Arial, Helvetica, sans-serif;">
-
-    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+<body class="st-body">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2ede6">
         <tr>
-            <td align="center">
+            <td align="center" class="st-outer-wrap">
+                <table class="email-wrap st-shell" width="600" cellpadding="0" cellspacing="0" border="0">
 
-                <!-- Main Container -->
-                <table width="600" cellpadding="0" cellspacing="0" border="0" class="container email-bg"
-                    style="max-width:600px; width:100%; background-color:#ffffff;">
-
-                    <!-- Logo -->
                     <tr>
-                        <td align="center" style="padding:30px 20px 10px 20px;">
-                            <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/logo_hr_02.png"
-                                alt="Dunder Mifflin Logo"
-                                style="width:100%; max-width:600px; height:auto; display:block;">
-                            <h2 class="text-dark" style="margin:0; font-size:28px; letter-spacing:2px; color:#000000;">
-                                DUNDER MIFFLIN
-                            </h2>
-                            <p class="text-muted" style="margin:0; font-size:14px; color:#555555;">
-                                Paper Company
-                            </p>
-                        </td>
-                    </tr>
-
-                    <!-- Heading -->
-                    <tr>
-                        <td align="center" style="padding:20px;">
-                            <h1 class="text-dark" style="margin:0; font-size:30px; color:#222222;">
-                                I am Beyoncé always.
-                            </h1>
-                        </td>
-                    </tr>
-
-                    <!-- CTA -->
-                    <tr>
-                        <td align="center" style="padding:10px 20px 30px 20px;">
-                            <a href="#"
-                                style="background-color:#2f5bd3; color:#ffffff; text-decoration:none; padding:12px 30px; display:inline-block; border-radius:4px; font-size:16px;">
-                                CTA Text
+                        <td align="center" class="st-header">
+                            <a href="https://tranquildc.com" class="st-link-none">
+                                <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                    <tr>
+                                        <td valign="middle" class="st-logo-td">
+                                            <img src="https://raw.githubusercontent.com/amrindersinghdevopswork/4161/main/images/logo_3D%402x.png"
+                                                alt="Tranquil Decor" width="48" class="st-logo">
+                                        </td>
+                                        <td valign="middle" class="st-brand-border">
+                                            <span class="st-brand-title">Tranquil Decor</span>
+                                            <span class="st-brand-tag">Style With Harmony</span>
+                                        </td>
+                                    </tr>
+                                </table>
                             </a>
                         </td>
                     </tr>
 
-                    <!-- Wireframe Image -->
                     <tr>
-                        <td align="center">
-                            <!-- Replace src with your hosted image URL if needed -->
-                            <img src="https://cdn.jsdelivr.net/gh/amrindersinghdevopswork/4161@main/images/Banner_f.jpg.jpeg"
-                                alt="Dunder Mifflin Team"
-                                style="width:100%; max-width:600px; height:auto; display:block;">
+                        <td class="st-hero-td">
+                            <img src="https://raw.githubusercontent.com/amrindersinghdevopswork/4161/main/images/Eid-ul-Fitr%20living%20room%20decor.png"
+                                width="600" alt="Elegant Interior by Tranquil Decor" class="st-hero-img">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="3" class="st-gold-rule1">&nbsp;</td>
+                    </tr>
+
+                    <tr>
+                        <td class="pad-main st-greet-td" align="center">
+                            <p class="st-greet-over">Eid Mubarak &nbsp;&#10022;&nbsp; 2026</p>
+                            <h1 class="hero-h1 st-greet-h1">Wishing You a Home<br>Full of Joy &amp; Warmth</h1>
+                            <table cellpadding="0" cellspacing="0" border="0" align="center" class="st-gold-rule2">
+                                <tr>
+                                    <td width="48" height="2" bgcolor="#c9a96e" class="st-gold-rule-td">&nbsp;</td>
+                                </tr>
+                            </table>
+                            <p class="st-greet-body">
+                                Wishing you and your loved ones a joyous and blessed Eid. At <strong
+                                    class="st-fw-600">Tranquil Decor</strong>, every home we design is a labor of
+                                love&mdash;and this festive season is a beautiful reminder of why the spaces we share
+                                truly matter.
+                            </p>
+                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"
+                                class="st-cta-small-tbl">
+                                <tr>
+                                    <td align="center" bgcolor="#041C0F" class="st-cta-small-td">
+                                        <a href="tel:+917679355991" class="st-cta-small-a">Get In Touch</a>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
 
-                    <!-- Content -->
                     <tr>
-                        <td align="center" class="padding-mobile" style="padding:30px;">
-                            <p class="text-muted" style="font-size:16px; color:#555555; line-height:1.6; margin:0;">
-                                They always say that it’s a mistake to hire your friends. And they are right. So, I
-                                hired my best friends.
+                        <td class="st-svc-wrap">
+                            <table cellpadding="0" cellspacing="0" width="100%" class="st-svc-header">
+                                <tr>
+                                    <td class="st-svc-g1">&nbsp;</td>
+                                    <td class="st-svc-cap"><span class="st-greet-over">What We Do</span></td>
+                                    <td class="st-svc-g2">&nbsp;</td>
+                                </tr>
+                            </table>
+
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="svc-td" valign="top" width="48%">
+                                        <table cellpadding="0" cellspacing="0" width="100%" class="st-svc-tbl">
+                                            <tr>
+                                                <td class="st-svc-card">
+                                                    <p class="st-svc-h3">Full Home Design</p>
+                                                    <p class="st-svc-p">End-to-end interior design &mdash; concept,
+                                                        material selection, furniture &amp; execution.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="svc-gap" width="4%">&nbsp;</td>
+                                    <td class="svc-td" valign="top" width="48%">
+                                        <table cellpadding="0" cellspacing="0" width="100%" class="st-svc-tbl">
+                                            <tr>
+                                                <td class="st-svc-card">
+                                                    <p class="st-svc-h3">Turnkey Handover</p>
+                                                    <p class="st-svc-p">Move-in ready delivery &mdash; on schedule,
+                                                        managed budgets, zero stress.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td class="svc-td" valign="top" width="48%">
+                                        <table cellpadding="0" cellspacing="0" width="100%" class="st-svc-tbl">
+                                            <tr>
+                                                <td class="st-svc-card">
+                                                    <p class="st-svc-h3">3D Visualisation</p>
+                                                    <p class="st-svc-p">See your home before a single nail is driven
+                                                        &mdash; photorealistic renders of every room.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td class="svc-gap" width="4%">&nbsp;</td>
+                                    <td class="svc-td" valign="top" width="48%">
+                                        <table cellpadding="0" cellspacing="0" width="100%" class="st-svc-tbl">
+                                            <tr>
+                                                <td class="st-svc-card">
+                                                    <p class="st-svc-h3">Space Planning</p>
+                                                    <p class="st-svc-p">Optimised layouts that maximise light, flow, and
+                                                        every square foot of your space.</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="st-cta-bg">
+                            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="st-cta-scrim">
+                                <tr>
+                                    <td align="center" class="st-cta-pad">
+                                        <p class="st-cta-over">Eid Inspiration</p>
+                                        <h2 class="st-cta-h2">Start Your Dream Home<br><em class="st-italic-gold">This
+                                                Eid</em></h2>
+                                        <table cellpadding="0" cellspacing="0" border="0" align="center"
+                                            class="st-gold-rule2">
+                                            <tr>
+                                                <td width="40" height="1" bgcolor="#c9a96e" class="st-gold-rule-td">
+                                                    &nbsp;</td>
+                                            </tr>
+                                        </table>
+                                        <p class="st-cta-body">
+                                            Schedule a design consultation and discover our <br> <span
+                                                class="st-cta-highlight">Exclusive Voltas 2-Ton AC Package</span> on
+                                            complete home interior projects.
+                                        </p>
+                                        <table role="presentation" cellpadding="0" cellspacing="0" align="center"
+                                            class="st-img-wrap">
+                                            <tr>
+                                                <td align="center">
+                                                    <img src="https://raw.githubusercontent.com/amrindersinghdevopswork/4161/main/images/AC-voltas.png"
+                                                        alt="Complimentary Voltas AC" width="100" class="st-img-ac" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <a href="https://tranquildc.com" class="st-cta-large-a">Schedule
+                                            Consultation</a>
+                                        <p class="st-microcopy">Expertly crafted spaces tailored exactly to your vision.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="st-trust-wrap">
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                    <td align="center" width="33%">
+                                        <p class="st-trust-val">500+</p>
+                                        <p class="st-trust-lbl">Projects Done</p>
+                                    </td>
+                                    <td align="center" width="34%" class="st-trust-sep">
+                                        <p class="st-trust-val">8+</p>
+                                        <p class="st-trust-lbl">Years Experience</p>
+                                    </td>
+                                    <td align="center" width="33%">
+                                        <p class="st-trust-val">Assured</p>
+                                        <p class="st-trust-lbl">On-Time Delivery</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="mob-pad footer-td st-footer">
+                            <table role="presentation" cellpadding="0" cellspacing="0" align="center"
+                                class="st-social-wrap">
+                                <tr>
+                                    <td class="st-social-pad">
+                                        <a href="https://www.facebook.com/tranquildecor1" class="st-social-a">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" class="st-social-inner">
+                                                <tr>
+                                                    <td align="center" valign="middle" height="44"
+                                                        class="st-social-img-td">
+                                                        <img src="https://img.icons8.com/ios-filled/50/C9A96E/facebook-f.png"
+                                                            width="24" height="24" alt="FB" class="st-social-icon" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </td>
+                                    <td class="st-social-pad">
+                                        <a href="https://www.instagram.com/tranquildc/" class="st-social-a">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" class="st-social-inner">
+                                                <tr>
+                                                    <td align="center" valign="middle" height="44"
+                                                        class="st-social-img-td">
+                                                        <img src="https://img.icons8.com/ios-filled/50/C9A96E/instagram-new.png"
+                                                            width="24" height="24" alt="IG" class="st-social-icon" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </td>
+                                    <td class="st-social-pad">
+                                        <a href="https://www.linkedin.com/company/107141777/admin/dashboard/"
+                                            class="st-social-a">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" class="st-social-inner">
+                                                <tr>
+                                                    <td align="center" valign="middle" height="44"
+                                                        class="st-social-img-td">
+                                                        <img src="https://img.icons8.com/ios-filled/50/C9A96E/linkedin-2.png"
+                                                            width="24" height="24" alt="LI" class="st-social-icon" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </td>
+                                    <td class="st-social-pad">
+                                        <a href="mailto:info@tranquildc.com" class="st-social-a">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" width="44"
+                                                height="44" class="st-social-inner">
+                                                <tr>
+                                                    <td align="center" valign="middle" height="44"
+                                                        class="st-social-img-td">
+                                                        <img src="https://img.icons8.com/ios-filled/50/C9A96E/filled-message.png"
+                                                            width="24" height="24" alt="Email" class="st-social-icon" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p class="st-legal-1">
+                                H. No-46, Dhumsa Toli, Pragati Path, Oxford Road, Chutia, Ranchi — 834001<br />
+                                <a href="tel:+913369029564" class="st-legal-a1">+91 336-902-9564</a>
+                                &nbsp;|&nbsp;
+                                <a href="mailto:info@tranquildc.com" class="st-legal-a1">info@tranquildc.com</a>
+                            </p>
+                            <p class="st-legal-2">
+                                © 2026 Tranquil Decor. All rights reserved.<br />
+                                You received this because you're a valued client of Tranquil Decor.<br />
+                                <a href="https://tranquildc.com/unsubscribe" class="st-legal-a2">Unsubscribe</a>
                             </p>
                         </td>
                     </tr>
-
-                    <!-- Bullet Points -->
-                    <tr>
-                        <td class="padding-mobile" style="padding:10px 120px 20px 120px;">
-                            <ul style="padding-left:20px; margin:0; color:#555555; font-size:15px; line-height:1.6;">
-                                <li>I’m an early bird and I’m a night owl, so I’m wise and have worms.</li>
-                                <li>I am running away from my responsibilities. And it feels good.</li>
-                                <li>This is a dream that I’ve had since lunch and I’m not giving it up now.</li>
-                            </ul>
-                        </td>
-                    </tr>
-
-                    <!-- Bottom CTA -->
-                    <tr>
-                        <td align="center" style="padding:20px 20px 40px 20px;">
-                            <a href="#"
-                                style="background-color:#2f5bd3; color:#ffffff; text-decoration:none; padding:12px 30px; display:inline-block; border-radius:4px; font-size:16px;">
-                                CTA Text
-                            </a>
-                        </td>
-                    </tr>
-
-                    <!-- Social Icons -->
-                    <tr>
-                        <td align="center" style="padding:20px;">
-                            <a href="#" style="margin:0 10px;">
-                                <img src="https://cdn-icons-png.flaticon.com/24/733/733579.png" width="24" height="24"
-                                    alt="Twitter">
-                            </a>
-                            <a href="#" style="margin:0 10px;">
-                                <img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" width="24" height="24"
-                                    alt="Facebook">
-                            </a>
-                            <a href="#" style="margin:0 10px;">
-                                <img src="https://cdn-icons-png.flaticon.com/24/733/733558.png" width="24" height="24"
-                                    alt="Instagram">
-                            </a>
-                        </td>
-                    </tr>
-
-                    <!-- Footer -->
-                    <tr>
-                        <td align="center" class="footer-bg" style="padding:30px 20px; background-color:#f7f7f7;">
-                            <p class="text-muted" style="margin:5px 0; font-size:14px; color:#777777;">
-                                dundermifflinpaper.com
-                            </p>
-                            <p class="text-muted" style="margin:5px 0; font-size:14px; color:#777777;">
-                                1725 Slough Avenue #200, Scranton, PA, 18540
-                            </p>
-                            <p class="text-muted" style="margin:5px 0; font-size:14px; color:#777777;">
-                                © 2020 Bonnie Kate Wolf
-                            </p>
-                        </td>
-                    </tr>
-
                 </table>
             </td>
         </tr>
     </table>
-
 </body>
 
 </html>
