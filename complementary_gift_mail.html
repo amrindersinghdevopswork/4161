@@ -71,11 +71,12 @@
                 display: block !important;
                 width: 100% !important;
                 box-sizing: border-box !important;
-                padding: 14px 18px !important;
+                padding: 14px 0 !important;
             }
 
             .em-gc-l {
                 border-bottom: 1px solid #ece7df !important;
+                border-right: none !important;
             }
 
             .em-gc-d {
@@ -110,6 +111,25 @@
             .em-sn {
                 font-size: 17px !important;
             }
+
+            /* Proposal card header stacks on mobile */
+            .em-card-hdr {
+                display: block !important;
+                width: 100% !important;
+            }
+
+            .em-card-badge {
+                display: block !important;
+                width: 100% !important;
+                text-align: left !important;
+                padding: 12px 0 0 0 !important;
+            }
+
+            /* Reduce card heading size on mobile */
+            .em-card-title {
+                font-size: 26px !important;
+                line-height: 34px !important;
+            }
         }
     </style>
 </head>
@@ -132,7 +152,7 @@
 
                     <!-- TOP GOLD BAR -->
                     <tr>
-                        <td style="height:3px; background-color:#c9a96e; line-height:3px; font-size:1px;">&nbsp;</td>
+                        <td style="height:3px; background-color:#041c0f; line-height:3px; font-size:1px;">&nbsp;</td>
                     </tr>
 
                     <!-- HEADER -->
@@ -205,28 +225,194 @@
                                 attention at every stage.
                             </p>
 
-                            <!-- Gift intro — emotionally reframed -->
+                            <!-- Project Confirmation bridge -->
                             <p style="margin:0 0 28px 0; font-size:15px; line-height:30px; color:#3d3530;">
-                                As a gesture of appreciation for choosing us, we are delighted to offer you a
-                                complimentary <strong>Voltas 2 Ton Air Conditioner</strong> — thoughtfully selected
-                                for its trusted performance and premium comfort.
+                                Your project proposal has been reviewed, approved, and signed. Below is a summary of
+                                your confirmed engagement with <strong>Tranquil Decor</strong>.
+                            </p>
+
+                            <!-- ── PROPOSAL SUMMARY CARD — MINIMALIST ── -->
+                            <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"
+                                style="margin:0 0 32px 0; background-color:#faf9f6; border-left: 3px solid #c9a96e;">
+
+                                <!-- Top gold accent line
+                                <tr>
+                                    <td style="height:4px; background-color:#c9a96e; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr> -->
+
+                                <!-- Card header: label + badge -->
+                                <tr>
+                                    <td style="padding:24px 24px 8px 24px;">
+                                        <table role="presentation" width="100%" border="0" cellspacing="0"
+                                            cellpadding="0">
+                                            <tr>
+                                                <td class="em-card-hdr" valign="middle">
+                                                    <p
+                                                        style="margin:0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:3px; color:#121212; font-weight:700; text-transform:uppercase;">
+                                                        Project Confirmation</p>
+                                                </td>
+                                                <td class="em-card-badge" align="right" valign="middle">
+                                                    <span
+                                                        style="display:inline-block; border:1px solid #3d8c60; padding:4px 12px; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:9px; letter-spacing:1.5px; color:#2d7a56; font-weight:700; text-transform:uppercase;">&#10003;
+                                                        Approved</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+                                <!-- Heading -->
+                                <tr>
+                                    <td style="padding:4px 24px 20px 24px;">
+                                        <p class="em-card-title"
+                                            style="margin:0; font-family:'Playfair Display', Georgia, serif; font-size:28px; color:#1a1714; font-weight:700; line-height:36px;">
+                                            Interior Project Proposal</p>
+                                    </td>
+                                </tr>
+
+                                <!-- Hairline -->
+                                <tr>
+                                    <td style="border-top:1px solid #e5ddd3; font-size:0; line-height:0;">&nbsp;</td>
+                                </tr>
+
+                                <!-- Data rows -->
+                                <tr>
+                                    <td style="padding:0 24px;">
+
+                                        <!-- Row 1 -->
+                                        <table role="presentation" width="100%" border="0" cellspacing="0"
+                                            cellpadding="0">
+                                            <tr>
+                                                <td class="em-gc em-gc-l" width="50%" valign="top"
+                                                    style="padding:16px 20px 16px 0; border-right:1px solid #e5ddd3;">
+                                                    <p
+                                                        style="margin:0 0 4px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
+                                                        Proposal ID</p>
+                                                    <p
+                                                        style="margin:0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:15px; color:#1a1714; font-weight:500; line-height:22px;">
+                                                        {{proposal_id}}</p>
+                                                </td>
+                                                <td class="em-gc-d" width="1" style="font-size:0;">&nbsp;</td>
+                                                <td class="em-gc" width="50%" valign="top"
+                                                    style="padding:16px 0 16px 20px;">
+                                                    <p
+                                                        style="margin:0 0 4px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
+                                                        Project</p>
+                                                    <p
+                                                        style="margin:0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:15px; color:#1a1714; font-weight:500; line-height:22px;">
+                                                        {{project_name}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Hairline -->
+                                        <table role="presentation" width="100%" border="0" cellspacing="0"
+                                            cellpadding="0">
+                                            <tr>
+                                                <td style="border-top:1px solid #ece7df; height:0; font-size:0;">&nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Row 2 -->
+                                        <table role="presentation" width="100%" border="0" cellspacing="0"
+                                            cellpadding="0">
+                                            <tr>
+                                                <td class="em-gc em-gc-l" width="50%" valign="top"
+                                                    style="padding:16px 20px 16px 0; border-right:1px solid #e5ddd3;">
+                                                    <p
+                                                        style="margin:0 0 4px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
+                                                        Proposal Value</p>
+                                                    <p
+                                                        style="margin:0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:15px; color:#1a1714; font-weight:500; line-height:22px;">
+                                                        {{proposal_value}}</p>
+                                                </td>
+                                                <td class="em-gc-d" width="1" style="font-size:0;">&nbsp;</td>
+                                                <td class="em-gc" width="50%" valign="top"
+                                                    style="padding:16px 0 16px 20px;">
+                                                    <p
+                                                        style="margin:0 0 4px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
+                                                        Approval Date</p>
+                                                    <p
+                                                        style="margin:0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:15px; color:#1a1714; font-weight:500; line-height:22px;">
+                                                        {{approval_date}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Hairline -->
+                                        <table role="presentation" width="100%" border="0" cellspacing="0"
+                                            cellpadding="0">
+                                            <tr>
+                                                <td style="border-top:1px solid #ece7df; height:0; font-size:0;">&nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Row 3: Client -->
+                                        <table role="presentation" width="100%" border="0" cellspacing="0"
+                                            cellpadding="0">
+                                            <tr>
+                                                <td valign="top" style="padding:16px 0 20px 0;">
+                                                    <p
+                                                        style="margin:0 0 4px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
+                                                        Client</p>
+                                                    <p
+                                                        style="margin:0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:15px; color:#1a1714; font-weight:500; line-height:22px;">
+                                                        {{name}}</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <!-- Row 4: View PDF Button -->
+                                        <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td style="padding: 0 0 24px 0;">
+                                                    <table role="presentation" border="0" cellspacing="0" cellpadding="0">
+                                                        <tr>
+                                                            <td style="background-color:#1a1714;">
+                                                                <a href="{{quotation_pdf_url}}" target="_blank"
+                                                                    style="display:inline-block; padding:12px 24px; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:#ffffff; text-decoration:none;">
+                                                                    View Full Quotation (PDF)
+                                                                </a>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- ── END PROPOSAL CARD ── -->
+
+
+
+
+
+
+
+
+
+                            <!-- Gift intro — luxury framing -->
+                            <p style="margin:0 0 28px 0; font-size:15px; line-height:30px; color:#3d3530;">
+                                As a token of appreciation for placing your trust in us, we are delighted to present
+                                you with a complimentary <strong>Voltas 2 Ton Air Conditioner</strong> — a gesture that
+                                reflects our commitment to delivering a truly premium onboarding experience.
                             </p>
 
                             <!-- Gift Detail Card — MINIMALIST -->
                             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"
-                                style="margin:0 0 30px 0;">
+                                style="margin:0 0 30px 0; border-left: 3px solid #c9a96e;">
                                 <tr>
-                                    <!-- Gold left accent bar -->
-                                    <td width="3"
-                                        style="width:3px; background-color:#c9a96e; font-size:0; line-height:0;">&nbsp;
-                                    </td>
 
                                     <!-- Card content -->
                                     <td style="background-color:#faf9f6; padding:28px 30px 28px 28px;">
 
                                         <!-- Eyebrow label -->
                                         <p
-                                            style="margin:0 0 16px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:8px; letter-spacing:3px; color:#b0a89e; font-weight:600; text-transform:uppercase;">
+                                            style="margin:0 0 16px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; letter-spacing:3px; color:#121212; font-weight:700; text-transform:uppercase;">
                                             Your Complimentary Gift
                                         </p>
 
@@ -252,7 +438,7 @@
                                                 <td class="em-gc em-gc-l" width="50%" valign="top"
                                                     style="padding-right:24px; border-right:1px solid #ece7df;">
                                                     <p
-                                                        style="margin:0 0 6px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:8px; color:#b0a89e; letter-spacing:2.5px; text-transform:uppercase;">
+                                                        style="margin:0 0 6px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
                                                         Gift Item
                                                     </p>
                                                     <p
@@ -264,7 +450,7 @@
                                                 </td>
                                                 <td class="em-gc" width="50%" valign="top" style="padding-left:24px;">
                                                     <p
-                                                        style="margin:0 0 6px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:8px; color:#b0a89e; letter-spacing:2.5px; text-transform:uppercase;">
+                                                        style="margin:0 0 6px 0; font-family:'Karla', Arial, Helvetica, sans-serif; font-size:12px; color:#121212; letter-spacing:2px; text-transform:uppercase;">
                                                         Delivery Timeline
                                                     </p>
                                                     <p
@@ -278,19 +464,18 @@
                                     </td>
                                 </tr>
                             </table>
-
                             <!-- Delivery note -->
                             <p style="margin:0 0 20px 0; font-size:15px; line-height:30px; color:#3d3530;">
                                 You will receive your order confirmation and delivery details shortly from our support
                                 team.
                             </p>
 
-                            <!-- Brand philosophy -->
+                            <!-- Brand philosophy
                             <p style="margin:0 0 20px 0; font-size:15px; line-height:30px; color:#3d3530;">
                                 At <strong>Tranquil Decor</strong>, we believe great interiors go beyond design —
                                 they create refined living experiences that combine functionality, luxury, and timeless
                                 aesthetics.
-                            </p>
+                            </p> -->
 
                             <!-- Closing — emotionally upgraded -->
                             <p style="margin:0 0 36px 0; font-size:15px; line-height:30px; color:#3d3530;">
@@ -320,7 +505,7 @@
                             </p>
                             <!-- CTA Block -->
                             <table role="presentation" width="100%" border="0" cellspacing="0" cellpadding="0"
-                                style="margin:80px 0 0px 0; background-color:#faf9f6; border-left:3px solid #c9a96e;">
+                                style="margin:80px 0 0px 0; background-color:#faf9f6; border-left:3px solid #041c0f;">
                                 <tr>
                                     <td style="padding:22px 24px;">
                                         <p
